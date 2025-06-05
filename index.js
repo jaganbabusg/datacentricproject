@@ -18,7 +18,13 @@ app.listen(4000, () => {
         "/register - Register a new user Body:[Email, Password, Department, Role]\n\r" +
         "/login - Login an existing user Body:[Email, Password]\n\r" +
         "/user - Get user details (Authorization header) [Email]\n\r" +
-        "/users - Get all users (Authorization header) \n\r");
+        "/users - Get all users (Authorization header) \n\r" +
+        "/employees - Get all employees (Authorization header) \n\r" +
+        "/employee/:id - Get employee details by ID (Authorization header) \n\r" +
+        "/search/employee?firstName=...&lastName=... - Search employee by first and last name (Authorization header) \n\r" +
+        "/employee/add - Add a new employee Body:[employee_id, first_name, last_name, email, phone, department, designation, date_of_joining, employment_type, location] (Authorization header) \n\r" +
+        "/employee/update/:id - Update an existing employee by ID Body:[first_name, last_name, email, phone, department, designation, date_of_joining, employment_type, location] (Authorization header) \n\r" +
+        "/employee/delete/:id - Delete an employee by ID (Authorization header)");
 });
 main();
 
