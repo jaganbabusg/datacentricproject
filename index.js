@@ -1,10 +1,8 @@
 const express = require("express");
 const cors = require("cors");
-const { ObjectId } = require("mongodb");
 const MongoClient = require("mongodb").MongoClient;
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { json } = require("body-parser");
 require("dotenv").config();
 const MongoUri = process.env.DB_CONNECTION_STRING;
 const dbName = "datacentricproject";
